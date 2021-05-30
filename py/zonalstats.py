@@ -13,11 +13,9 @@ zonal_path = os.path.join(data_path, 'zonal')
 schema = 'urban_pop'
 
 # Change iso list
-#iso_ls = sorted(['USA', 'GBR', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
-iso_ls = sorted(['HTI', 'RWA'])
+iso_ls = sorted(['USA', 'GBR', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
 # List of gridded population datasets
 gpd_ls = ['gpw', 'ghs_pop', 'worldpop']
-
 
 # Setup zonal class for applying zonal stats using Exactextract
 zonal = zonal_stats(section = 'postgresql', config_path = '../src/config/', config_file = 'database.ini', country_iso3 = iso_ls)

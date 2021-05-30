@@ -8,9 +8,7 @@ config_path = '../src/config/'
 config_file = 'database.ini'
 
 # Change iso list
-#iso_ls = sorted(['USA', 'GBR', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
-iso_ls = sorted(['RWA', 'HTI'])
-
+iso_ls = sorted(['USA', 'GBR', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
 # List of gridded population datasets
 gpd_ls = ['gpw', 'ghs_pop', 'worldpop']
 # Pop density thresholds

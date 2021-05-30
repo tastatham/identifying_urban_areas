@@ -7,8 +7,7 @@ from src.data.download_data import *
 
 schema = 'urban_pop'
 # Define lists
-#iso_ls = sorted(['GBR', 'USA', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
-iso_ls = sorted(['HTI', 'RWA'])
+iso_ls = sorted(['GBR', 'USA', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
 # Define pg conn
 db_conn = postgres_conn(section = 'postgresql', config_path = '../src/config/', config_file = 'database.ini', country_iso3 = iso_ls)
 # Add user defined functions

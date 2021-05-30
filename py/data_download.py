@@ -12,11 +12,9 @@ gadm_path = os.path.join(data_path, 'gadm', 'gadm36_levels.gpkg')
 schema = 'urban_pop'
 
 # Change iso list
-#iso_ls = sorted(['USA', 'GBR', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
-iso_ls = sorted(['HTI', 'RWA'])
+iso_ls = sorted(['USA', 'GBR', 'IND', 'ARG', 'MEX', 'HTI', 'NGA', 'RWA', 'ZAF', 'KEN', 'IDN', 'THA'])
 # Define class for dealing with db connections
 db_conn = postgres_conn(section = 'postgresql', config_path = '../src/config/', config_file = 'database.ini', country_iso3 = iso_ls)
-
 
 # Create / drop postgres schema
 try:
