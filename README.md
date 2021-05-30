@@ -3,18 +3,21 @@ This repository hosts all of the code (both analysis and figures) used in the "i
 
 ## Setting up computational environment & running analysis
 We initially setup the analysis to use pure Python but we quickly realised that current packages are limited when conducting international scale geospatial analysis.
-To overcome these limitations, we did apply geospatial packages in Python (geopandas, rasterio, xarray etc.) with GDAL, postgreSQL with postGIS & raster extensions and Exactextract. 
+To overcome these limitations, we combined multiple geospatial tools, including geospatial packages in Python (geopandas, rasterio, xarray etc.) with GDAL, postgreSQL with postGIS & raster extensions and Exactextract. 
 We used Docker to overcome dependency issues when setting up the computational environment and we provide a docker-compose.yml file.
-You can of course opt to setup the computational environment yourself but you will have to modify several scripts which reference the database connection - see repository breakdown.
-The ymlfile defines two docker builds that are linked together using a network bridge.
+You can of course opt to setup the computational environment yourself & update the scripts where database connections are defined.
+The yml file defines two docker builds that are linked together using a network bridge.
+
 The first contains:
 
     - Jupyter notebook server
     - Exactextract
 
 The second contains:
+
     - PostgreSQL
     - with postGIS & raster extension
+
 You must define the  `gid`, `uid` and `ports` in the docker-compose.yml (based on your machine).
 
 ## Repository breakdown 
