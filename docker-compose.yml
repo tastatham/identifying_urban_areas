@@ -1,0 +1,49 @@
+version: '3' 
+services: 
+
+  jupyter: 
+    build: 
+      context: ./build/jupyter 
+    image: jupyter/comparing_urban
+    ports: 
+      - '8888:8888' # Change if necessary
+    container_name: comparing_urban_jupyter
+    user: root 
+    volumes:
+        - ~:/home/jovyan/work # cd into /comparing_urban_areas/identifying_urban_areas
+    working_dir: /home/jovyan/work
+
+    links: 
+      - comparing_urban_db 
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=urban_pop
+      #- NB_USER=jovyan # default anyway
+      - NB_GID=1001 # change this to your gid, wolflab is 1380
+      - NB_UID=1001 # change this to your uid, wolflab is 354310
+    networks:
+      - db_network
+
+  # Database server: postgres with postgis extension
+  comparing_urban_db:
+    image: kartoza/postgis:13.0
+    container_name: comparing_urban_db 
+    ports:
+      - "5432:5432" # Change if necessary
+    restart: always
+    shm_size: 1GB # Increase if necessary
+    environment:
+      - POSTGRES_DB=comparing_urban
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASS=postgres
+      - POSTGRES_MULTIPLE_EXTENSIONS=postgis,postgis_topology,postgis_raster
+      - POSTGRES_HOST_AUTH_METHOD= trust
+    #  - MAX_WORKERS=8 # depends how many cpus you have available
+    #  - MAX_LOGICAL_REPLICATION_WORKERS=4
+    #  - MAX_SYNC_WORKERS_PER_SUBSCRIPTION=2
+    networks:
+      - db_network
+
+networks: 
+  db_network:
+    driver: bridge

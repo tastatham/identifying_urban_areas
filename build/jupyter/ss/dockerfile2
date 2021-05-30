@@ -1,0 +1,22 @@
+FROM jupyter/minimal-notebook:703d8b2dcb88
+
+LABEL maintainer="Thomas Statham<tastatham@gmail.com>"
+LABEL version="0.1"
+LABEL description="Computational environment for Statham et al analysis - comparing urban areas"
+
+ARG conda_env="comparing_urban"
+ARG NB_USER=jovyan
+
+USER root
+
+COPY environment.txt /src/environment.txt
+RUN conda create --name ${conda_env} --file /src/environment.txt
+RUN echo "source activate ${conda_env}" > ~/.bashrc
+#ENV PATH /opt/conda/envs/${conda_env}/bin:$PATH
+#RUN python -m ipykernel install --user --name comparing_urban --display-name "Comparing urban populations"
+RUN echo "jupyter kernelspec list"
+RUN jupyter labextension install @jupyterlab/debugger
+
+ENV CONDA_DEFAULT_ENV ${conda_env}
+
+USER $NB_USER 

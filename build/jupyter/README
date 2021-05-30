@@ -1,0 +1,10 @@
+# How to get environment.txt
+#conda activate comparing_urban
+#Export all packages to a file
+#conda list --explicit > environment.txt
+#Restore/import the environment:
+#conda create --name comparing_urban --file environment.txt
+
+#How to run dockerfile as jupyter lab
+#sudo docker run -it --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes -v "$PWD":/home/jovyan/work --user root demo 
+

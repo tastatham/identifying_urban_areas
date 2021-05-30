@@ -1,0 +1,53 @@
+FROM jupyter/minimal-notebook
+
+LABEL maintainer="Thomas Statham<tastatham@gmail.com>"
+LABEL version="0.1"
+LABEL description="Computational environment for Statham et al analysis - comparing urban areas"
+
+ARG conda_env="comparing_urban"
+ARG NB_USER=jovyan
+
+USER root
+
+COPY environment.txt /src/environment.txt
+
+RUN conda create --name ${conda_env} 
+SHELL ["conda","run","-n","comparing_urban","/bin/bash","-c"]
+RUN python -m ipykernel install --name comparing_urban --display-name "Comparing urban populations"
+RUN conda install --file /src/environment.txt
+
+
+SHELL ["/bin/bash","-c"]
+RUN conda init
+RUN echo 'conda activate comparing_urban' >> ~/.bashrc
+
+RUN set -eux \
+    && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get update \
+    && apt-get -y --no-install-recommends install \
+        wget curl build-essential ssh-client cmake git libgdal-dev libgeos-dev gdal-bin \
+        apt-transport-https ca-certificates gnupg-agent software-properties-common \
+    && apt-get -y --purge autoremove \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* 
+    
+COPY exactextract /exactextract
+RUN cd /exactextract \
+	&& mkdir /cmake-build-release \ 
+	&& cd /cmake-build-release \
+	&& cmake -DCMAKE_BUILD_TYPE=Release /exactextract \
+    && make \
+    && ./catch_tests \
+    && make install \
+    && rm -rf /cmake-build-release
+
+
+# NEED TO INSTALL postgis to have raster2pgsql
+#echo "deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+#wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+#sudo apt update
+#sudo apt install postgresql-12-postgis-2.5
+
+USER $NB_USER 
+
+#sudo docker run -it --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes -v "$PWD":/home/jovyan/work --user root demo 

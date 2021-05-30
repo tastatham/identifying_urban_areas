@@ -1,0 +1,58 @@
+# Identifying urban areas
+This repository hosts all of the code used to identify urban areas in "identifying urban areas: A new approach and comparison of national urban metrics with gridded population data".
+
+## Repository description 
+Repository description
+### /py 
+    - Directory contains all of the scripts used to reproduce the analysis and figures
+    - The most important aspect is to ensure all of the data has downloaded correctly in data_download.py. If not, then the analysis/figures will fail. 
+    ### Reproduce analysis & figures
+    /py
+    * data_download.py
+    * create_vector_grid.py
+    * zonalstats.py
+    * compute_national_urban_counts.py
+    * compute_national_urban_shares.py
+
+    * study_areas.py
+    * workflow_bristol.py
+    * density_thresholds_haiti.py
+    * national_urban_shares.py
+    * national_urban_areas_counts.py
+    * national_urban-areas_counts_income.py
+
+### Download data & create data
+    - /src/data/
+    - download_data.py - Downloads & crops data 
+    - db_conn.py - Defines connections to postgres database for running specific queries & submitting data to and from postgres 
+    - Zonalstats.py - calculates zonal statistics
+    
+### Calculate urban indicators
+    - /src/indicators/
+
+### Define postgreSQL queries
+    - /src/sql/
+    
+### Database configuration 
+    - /src/config/
+    - database.ini - defines db params
+    - config.py - adds db params as env variables
+
+### Optional 
+    - /src/build
+    - Helps us check database setup
+
+
+## Computational environment
+We also provide a docker-compose.yml file to set up the computational environment to run the analysis using Docker.  
+The yml file defines two docker builds that are linked together using a network bridge.
+The first contains;
+    - Jupyter notebook server
+    - Exactextract
+The second contains:
+    - PostgreSQL
+    - with postGIS & raster extension
+
+Setting up the computational environment assumes both Docker and Docker-compose are setup correctly. 
+You will also have to define the  `gid`, `uid` and `ports` to your machine.
+

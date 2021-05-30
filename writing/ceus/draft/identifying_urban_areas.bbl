@@ -1,0 +1,227 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{UN2020}
+UN, Statistical commission : report on the 51st session (3-6 march 2020), Tech.
+  rep., United Nations (Mar. 2020).
+\newblock \href
+  {https://doi.org/https://unstats.un.org/unsd/statcom/51st-session/documents/2020-37-FinalReport-E.pdf}
+  {\path{doi:https://unstats.un.org/unsd/statcom/51st-session/documents/2020-37-FinalReport-E.pdf}}.
+
+\bibitem{Moranetal2018}
+D.~Moran, K.~Kanemoto, M.~Jiborn, R.~Wood, J.~Többen, K.~C. Seto, Carbon
+  footprints of 13{\hspace{0.167em}}000 cities, Environmental Research Letters
+  13~(6) (2018) 064041.
+\newblock \href {https://doi.org/10.1088/1748-9326/aac72a}
+  {\path{doi:10.1088/1748-9326/aac72a}}.
+
+\bibitem{Corbaneetal2018}
+C.~Corbane, P.~Martino, P.~Panagiotis, F.~J. Aneta, M.~Michele, F.~Sergio,
+  S.~Marcello, E.~Daniele, N.~Gustavo, K.~Thomas, The grey-green divide:
+  multi-temporal analysis of greenness across 10,000 urban centres derived from
+  the global human settlement layer ({GHSL}), International Journal of Digital
+  Earth 13~(1) (2018) 101--118.
+\newblock \href {https://doi.org/10.1080/17538947.2018.1530311}
+  {\path{doi:10.1080/17538947.2018.1530311}}.
+
+\bibitem{Weissetal2018}
+D.~Weiss, A.~Nelson, H.~Gibson, W.~Temperley, S.~Peedell, A.~Lieber,
+  M.~Hancher, E.~Poyart, S.~Belchior, N.~Fullman, B.~Mappin, U.~Dalrymple,
+  J.~Rozier, T.~Lucas, R.~Howes, L.~Tusting, S.~Kang, E.~Cameron, D.~Bisanzio,
+  K.~Battle, S.~Bhatt, P.~Gething, A global map of travel time to cities to
+  assess inequalities in accessibility in 2015, Nature 553~(7688) (2018)
+  333--336.
+\newblock \href {https://doi.org/10.1038/nature25181}
+  {\path{doi:10.1038/nature25181}}.
+
+\bibitem{Boeing2021}
+G.~Boeing, \href{http://dx.doi.org/10.1111/gean.12281}{Street network models
+  and indicators for every urban area in the world}, Geographical Analysis
+  (Mar. 2021).
+\newblock \href {https://doi.org/10.1111/gean.12281}
+  {\path{doi:10.1111/gean.12281}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1111/gean.12281}
+
+\bibitem{Foxetal2017}
+S.~Fox, R.~Bloch, J.~Monroy, Understanding the dynamics of nigeria's urban
+  transition: A refutation of the `stalled urbanisation' hypothesis, Urban
+  Studies 55~(5) (2017) 947--964.
+\newblock \href {https://doi.org/10.1177/0042098017712688}
+  {\path{doi:10.1177/0042098017712688}}.
+
+\bibitem{Buettner2015}
+T.~Buettner, Urban estimates and projections at the united nations: The
+  strengths, weaknesses, and underpinnings of the world urbanization prospects,
+  Spatial Demography 3~(2) (2015) 91--108.
+\newblock \href {https://doi.org/10.1007/s40980-015-0004-2}
+  {\path{doi:10.1007/s40980-015-0004-2}}.
+
+\bibitem{Taubenboecketal2017}
+H.~Taubenböck, J.~Ferstl, S.~Dech, Regions set in stone{\textemdash}delimiting
+  and categorizing regions in europe by settlement patterns derived from
+  {EO}-data, {ISPRS} International Journal of Geo-Information 6~(2) (2017) 55.
+\newblock \href {https://doi.org/10.3390/ijgi6020055}
+  {\path{doi:10.3390/ijgi6020055}}.
+
+\bibitem{Angeletal2019}
+S.~Angel, P.~Lamson-Hall, N.~Galarza, A.~Blei, Our not-so-urban world, Tech.
+  rep., The Marron Institute of Urban Management (2019).
+
+\bibitem{Ondaetal2019}
+K.~Onda, P.~Sinha, A.~Gaughan, F.~Stevens, N.~Kaza, Missing millions:
+  undercounting urbanization in india, Population and Environment 41 (12 2019).
+\newblock \href {https://doi.org/10.1007/s11111-019-00329-2}
+  {\path{doi:10.1007/s11111-019-00329-2}}.
+
+\bibitem{Saladin2016}
+J.~Borel-Saladin, Where to draw the line: Data problems and other difficulties
+  estimating urbanisation in africa, Development Southern Africa 34~(2) (2016)
+  137--150.
+\newblock \href {https://doi.org/10.1080/0376835x.2016.1259992}
+  {\path{doi:10.1080/0376835x.2016.1259992}}.
+
+\bibitem{Dijkstra2020}
+L.~Dijkstra, A.~J. Florczyk, S.~Freire, T.~Kemper, M.~Melchiorri, M.~Pesaresi,
+  M.~Schiavina,
+  \href{https://www.sciencedirect.com/science/article/pii/S0094119020300838}{Applying
+  the degree of urbanisation to the globe: A new harmonised definition reveals
+  a different picture of global urbanisation}, Journal of Urban Economics
+  (2020) 103312\href
+  {https://doi.org/https://doi.org/10.1016/j.jue.2020.103312}
+  {\path{doi:https://doi.org/10.1016/j.jue.2020.103312}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0094119020300838}
+
+\bibitem{GPW2016}
+C.~for International Earth Science Information Network~(CIESIN), C.~University,
+  S.~Data, A.~C. (SEDAC), Gridded population of the world, version 4 (gpwv4):
+  Population density adjusted to match 2015 revision of un wpp country totals.,
+  data retrieved from SEDAC,
+  \url{https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density-rev11}
+  (2016).
+\newblock \href {https://doi.org/http://dx.doi.org/10.7927/H4HX19NJ}
+  {\path{doi:http://dx.doi.org/10.7927/H4HX19NJ}}.
+
+\bibitem{GHSPOP2019}
+S.~Marcello, F.~Sergio, M.~Kytt, Ghs population grid multitemporal (1975, 1990,
+  2000, 2015) r2019a. european commission, joint research centre (jrc), data
+  retrieved from SEDAC,
+  \url{http://data.europa.eu/89h/0c6b9751-a71f-4062-830b-43c9f432370f} (2019).
+\newblock \href {https://doi.org/10.2905/42E8BE89-54FF-464E-BE7B-BF9E64DA5218}
+  {\path{doi:10.2905/42E8BE89-54FF-464E-BE7B-BF9E64DA5218}}.
+
+\bibitem{WorldPop2018}
+WorldPop, U.~of~Southampton, U.~of~Louisville, C.~for International Earth
+  Science Information Network~(CIESIN), C.~University, Global high resolution
+  population denominators project - funded by the bill and melinda gates
+  foundation (opp1134076), data retrieved from SEDAC, \url{www.worldpop.org}
+  (2018).
+\newblock \href {https://doi.org/10.5258/SOTON/WP00647}
+  {\path{doi:10.5258/SOTON/WP00647}}.
+
+\bibitem{He2018}
+S.~He, C.~K.~L. Chung, M.~M. Bayrak, W.~Wang, Administrative boundary changes
+  and regional inequality in provincial china, Applied Spatial Analysis and
+  Policy 11 (2018) 103--120.
+\newblock \href {https://doi.org/https://doi.org/10.1007/s12061-016-9203-5}
+  {\path{doi:https://doi.org/10.1007/s12061-016-9203-5}}.
+
+\bibitem{Satterthwaite2007}
+D.~Satterthwaite, Transition to a predominantly urban world and its
+  underpinings, Human Settlements Programme, IIED, London, 2007.
+
+\bibitem{Batty2018}
+B.~Michael, Inventing Future Cities, The MIT Press, 2018.
+
+\bibitem{OECD2020}
+OECD, EC, Cities in the world: A new perspective on urbanisations, Tech. rep.,
+  OECD (Jun. 2020).
+\newblock \href {https://doi.org/https://doi.org/10.1787/d0efcbda-en}
+  {\path{doi:https://doi.org/10.1787/d0efcbda-en}}.
+
+\bibitem{Schneider2012}
+A.~Schneider, Monitoring land cover change in urban and peri-urban areas using
+  dense time stacks of landsat satellite data and a data mining approach,
+  Remote Sensing of Environment 124 (2012) 689--704.
+\newblock \href {https://doi.org/10.1016/j.rse.2012.06.006}
+  {\path{doi:10.1016/j.rse.2012.06.006}}.
+
+\bibitem{Arinoetal2012}
+A.~Olivier, R.~Perez, J.~Julio, K.~Vasileios, S.~Bontemps, P.~Defourny, E.~V.
+  Bogaert, \href{https://doi.org/10.1594/PANGAEA.787668}{{Global Land Cover Map
+  for 2009 (GlobCover 2009)}} (2012).
+\newblock \href {https://doi.org/10.1594/PANGAEA.787668}
+  {\path{doi:10.1594/PANGAEA.787668}}.
+\newline\urlprefix\url{https://doi.org/10.1594/PANGAEA.787668}
+
+\bibitem{Balketal2006}
+D.~Balk, U.~Deichmann, G.~Yetman, F.~Pozzi, S.~Hay, A.~Nelson, Determining
+  global population distribution: Methods, applications and data, Advances in
+  Parasitology (2006) 119--156\href
+  {https://doi.org/10.1016/s0065-308x(05)62004-0}
+  {\path{doi:10.1016/s0065-308x(05)62004-0}}.
+
+\bibitem{FarmerFotheringham2011}
+C.~Farmer, S.~Fotheringham, Network-based functional regions, Environment and
+  Planning A: Economy and Space 43~(11) (2011) 2723--2741.
+\newblock \href {https://doi.org/10.1068/a44136} {\path{doi:10.1068/a44136}}.
+
+\bibitem{Guéroisetal2014}
+M.~Guérois, A.~Bretagnolle, H.~Mathian, A.~Pavard, Functional urban areas
+  (fua) and european harmonisation. a feasibility study from the comparison of
+  two approaches: Commuting flows and accessibility isochrones. paris: Espon
+  database, Tech. rep., European Union (06 2014).
+
+\bibitem{ShenBatty2019}
+Y.~Shen, M.~Batty, Delineating the perceived functional regions of london from
+  commuting flows, Environment and Planning A: Economy and Space 51~(3) (2019)
+  547--550.
+\newblock \href {https://doi.org/10.1177/0308518X18786253}
+  {\path{doi:10.1177/0308518X18786253}}.
+
+\bibitem{ArribasBeletal2019}
+D.~Arribas-Bel, M.-{\`{A}}. Garcia-L{\'{o}}pez, E.~Viladecans-Marsal,
+  Building(s and) cities: Delineating urban areas with a machine learning
+  algorithm, Journal of Urban Economics (2019) 103217\href
+  {https://doi.org/10.1016/j.jue.2019.103217}
+  {\path{doi:10.1016/j.jue.2019.103217}}.
+
+\bibitem{Bellefonetal2019}
+M.-P. de~Bellefon, P.-P. Combes, G.~Duranton, L.~Gobillon, C.~Gorin,
+  Delineating urban areas using building density, Journal of Urban Economics
+  (2019) 103226\href {https://doi.org/10.1016/j.jue.2019.103226}
+  {\path{doi:10.1016/j.jue.2019.103226}}.
+
+\bibitem{Thomasetal2012}
+I.~Thomas, C.~Cotteels, J.~Jones, D.~Peeters, Revisiting the extension of the
+  brussels urban agglomeration~: new methods, new data {\ldots} new results~?,
+  Belgeo 1 (Mar. 2012).
+\newblock \href {https://doi.org/10.4000/belgeo.6074}
+  {\path{doi:10.4000/belgeo.6074}}.
+
+\bibitem{Exactextract2020}
+E.~D. Team, Exactextract, https://github.com/isciences/exactextract (2020).
+
+\bibitem{Esteretal1996}
+M.~Ester, H.-P. Kriegel, J.~Sander, X.~Xu, A density-based algorithm for
+  discovering clusters in large spatial databases with noise, AAAI Press, 1996,
+  pp. 226--231.
+
+\bibitem{Schubertetal2017}
+E.~Schubert, J.~Sander, M.~Ester, P.~Kriegel, X.~Xu,
+  \href{https://doi.org/10.1145/3068335}{Dbscan revisited, revisited: Why and
+  how you should (still) use dbscan}, ACM Trans. Database Syst. 42~(3) (Jul.
+  2017).
+\newblock \href {https://doi.org/10.1145/3068335} {\path{doi:10.1145/3068335}}.
+\newline\urlprefix\url{https://doi.org/10.1145/3068335}
+
+\bibitem{Anselin2002}
+A.~Luc, Under the hood: Issues in the specification and interpretation of
+  spatial regression models, Agricultural Economics 27 (2002) 247--267.
+\newblock \href {https://doi.org/10.1111/j.1574-0862.2002.tb00120.x}
+  {\path{doi:10.1111/j.1574-0862.2002.tb00120.x}}.
+
+\end{thebibliography}
